@@ -1,0 +1,548 @@
+@font-face {
+    font-family: "Samim-FD";
+    src: url("../fonts/Samim-FD.woff") format("woff");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Samim-FD", sans-serif;
+}
+
+.container {
+    background: linear-gradient(RGBA(13, 70, 83, 0.78), RGBA(13, 70, 83, 0.78)), url("../img/bg-banner.jpg");
+    width: 100%;
+    height: 700px;
+}
+
+/* nav bar  */
+
+.nav-bar {
+    position: fixed;
+    background: RGBA(13, 70, 83, 0.78);
+    width: 100%;
+    height: 80px;
+    z-index: 10; /* z-index اضافه شد */
+}
+
+.nav-bar ul li {
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 15px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 30px;
+    position: relative;
+    right: 130px;
+}
+
+.logo {
+    position: relative;
+    float: left;
+    width: 110px;
+    margin-left: 130px;
+    margin-top: 20px;
+}
+
+/* header */
+
+.header {
+    text-align: center;
+    padding-top: 250px;
+}
+
+.header h1 {
+    font-size: 35px;
+    color: white;
+    padding: 15px 0 15px 0;
+}
+
+.header p {
+    font-size: 15px;
+    color: white;
+    padding: 0px 0 15px 0;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 30px;
+    background-color: rgba(12, 184, 182, 0.91);
+}
+
+/* service */
+
+.my-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-top: 360px;
+    margin-right: 170px;
+}
+
+.item {
+    width: 350px; /* عرض هر آیتم */
+    height: 280px; /* ارتفاع هر آیتم */
+}
+
+.my-container .item1 .icon,
+.my-container .item2 .icon,
+.my-container .item4 .icon,
+.my-container .item5 .icon {
+    width: 70px;
+    height: 70px;
+}
+
+.item img {
+    margin-bottom: 20px;
+}
+
+.item p {
+    color: #999999;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.item h4 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.item3 h4 {
+    font-size: 35px;
+}
+
+hr {
+    height: 3px;
+    width: 60px;
+    background: #ffb737;
+    position: relative;
+    border: 0px;
+    margin: 20px 0 20px 0;
+}
+
+/* tabel */
+
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    color: white;
+    border: 0px solid #ededed;
+    border-top: 1px solid rgba(216, 216, 216, 0.6);
+    padding: 2px 50px 2px 45px;
+}
+
+/* Flexbox for Table Section */
+.table {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: center; /* Align items to the right */
+    gap: 1px; /* Space between items */
+    margin-top: 160px;
+}
+
+/* Individual Table Items */
+.itemintable {
+    flex: 1 1 calc(33.33% - 10px); /* Three items per row */
+    background-color: #0cb8b6;
+    padding: 30px 10px 30px 10px;
+    text-align: right;
+    position: relative;
+    max-width: 360px; /* Ensure a consistent width */
+}
+
+/* Headings in Table Items */
+.itemintable h4 {
+    color: white;
+    text-align: right;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+/* Links in Table Items */
+.itemintable a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 5px;
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+}
+
+/* Paragraphs in Table Items */
+.table p {
+    color: white;
+    font-size: 14px;
+}
+
+/* Text Box Section */
+.boxtext {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    margin-top: 170px;
+    margin-right: 165px;
+    gap: 60px;
+}
+
+/* Individual Boxes in Text Box */
+.iteminboxtext {
+    color: #000000;
+    width: 45%;
+}
+
+/* List Items in Text Box */
+.iteminboxtext li {
+    list-style-type: none;
+    font-weight: 900;
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    background: #0cb8b6;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 35px;
+    right: 450px;
+}
+
+/* Headings in Text Box */
+.iteminboxtext h3 {
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+/* about */
+
+.about {
+    position: relative;
+    bottom: 200px;
+    margin-top: 400px;
+}
+
+.about h1 {
+    position: relative;
+    margin-right: 160px;
+}
+
+.about hr {
+    position: relative;
+    margin-right: 160px;
+}
+
+.boximage {
+    display: flex;
+    justify-content: space-evenly;
+    width: 85%;
+    position: relative;
+    right: 130px;
+}
+
+.image {
+    border: 1px solid #999999;
+    width: 262px;
+    height: 400px;
+}
+
+.image img {
+    width: 252px;
+    padding: 5px;
+}
+
+.image li {
+    list-style-type: none;
+    display: inline;
+    padding-left: 10px;
+    position: relative;
+    right: 50px;
+}
+
+.image h2 {
+    padding: 10px;
+}
+
+.image p {
+    padding: 10px;
+}
+
+/* testimonial */
+
+.containertest {
+    background-color: #d5d5d5;
+    padding-bottom: 70px;
+    padding-top: 60px;
+}
+
+.containertest h1 , .containertest hr {
+    margin-right: 145px;
+}
+
+.testimonial {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.detalis {
+    width: 360px;
+    position: relative;
+}
+
+.detalis p {
+    color: #999999;
+}
+
+.textindetails {
+    height: 140px;
+    background: #fff;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 2px 0 rgba(0, 0, 0, .18);
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff;
+    position: relative;
+    bottom: 20px;
+    right: 300px;
+}
+
+.preson-info img {
+    float: left;
+    width: 50px;
+    position: relative;
+    bottom: 50px;
+}
+
+/* abouttext */
+
+.abouttext {
+   background-color: rgb(41, 48, 46);
+}
+
+.aboutus {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    padding: 50px;
+    gap: 150px;
+}
+
+.aboutus h1 {
+    font-size: 28px;
+    color: white;
+}
+
+.aboutus p {
+    width: 363px;
+    color: #999999;
+}
+
+/* contact */
+
+.containercontact {
+    margin-top: 70px;
+}
+
+.containercontact h2 , .containercontact hr {
+    margin-right: 90px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact h3 {
+    font-size: 25px;
+    padding: 10px 0px 35px 0px;
+}
+
+.ccontactform a {
+    background-color: #0cb8b6;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.ccontactform .massage {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ccontactform input {
+    width: 750px;
+    height: 40px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    padding: 5px;
+}
+
+input {
+    border: 1px solid #5d5d5d;
+    border-radius: 10px;
+}
+
+input::placeholder {
+    font-size: 20px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+.ccontactform #Subject {
+    resize: none;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+#Subject:focus {
+    outline: none;
+    border: 2px solid #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+textarea {
+    border-radius: 10px;
+}
+
+textarea::placeholder {
+    font-size: 25px;
+}
+
+.contactinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contactinfo p {
+    color: #999999;
+    font-size: 17px;
+    padding-bottom: 50px;
+}
+
+.contacticon ul {
+    margin-top: 80px;
+}
+
+.contacticon li {
+    list-style: none;
+    padding-bottom: 40px;
+    font-size: 30px;
+    color: #999999;
+}
+
+/* footer */
+
+.containerfooter {
+    background-color: #325c6a;
+    margin-top: 50px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 90px;
+    margin-left: 90px;
+}
+
+.footeriacon , .footerlink , .footerabout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    margin-top: 20px;
+}
+
+.footeriacon ul  {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    gap: 5px;
+}
+
+.footeriacon li {
+    list-style-type: none;
+    display: inline;
+    background-color: #E74C3C;
+    padding: 15px;
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+}
+
+.footeriacon a {
+    color: white;
+}
+
+.footer h4 {
+    color: #fff;
+    font-size: 21px;
+    padding: 30px 0px 0px 10px;
+}
+
+.footerlink ul {
+    padding-top: 20px;
+}
+
+.footerlink li {
+    list-style-type: none;
+    padding-bottom: 3px;
+}
+
+.footerlink a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footerabout p {
+    width: 320px;
+    color: #fff;
+    font-size: 17px;margin-top: 30px;
+}
+
+.copy hr {
+    margin: 55px 0px 0px 25px;
+    width: 100%;
+    height: 0.1px;
+    background: #999999;
+}
+
+.copy p {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
